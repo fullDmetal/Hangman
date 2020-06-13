@@ -65,10 +65,10 @@ class Hangman extends Component {
 		}
 		return (
 			<div className='Hangman bg-dark'>
+			<div className="text-right tx">
 				<h2 className='text-light text-center'>How much you know Amit</h2>
-				<div className="wg">
-				<span className='text-primary'>Guessed wrong: {this.state.mistake}</span>
-				</div>
+				<span className='text-primary h2'>Guessed wrong: {this.state.mistake}</span>
+			</div>
 				<div className='text-center ig'>
 					<img src={this.props.images[this.state.mistake]} />
 				</div>
