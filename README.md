@@ -1,4 +1,4 @@
-Hangman
+This site is made for fun.Only peolple from IIITM Gwalior should try it.
 
 How to run Hangman
 
@@ -8,9 +8,9 @@ How to run Hangman
 
 3.In Windows Use Windows PowerShell to go to Sample React App directory.
 
-4.Install npm using npm install
+4.Install npm using `npm install`
 
-5.Run npm start after installation is complete
+5.Run `npm start` after installation is complete
 
 
 ## Available Scripts
