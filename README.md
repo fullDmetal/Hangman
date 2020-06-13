@@ -1,6 +1,6 @@
-Robofriends
+Hangman
 
-How to run robofriends
+How to run Hangman
 
 1.Clone the repo
 
