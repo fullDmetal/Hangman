@@ -1,4 +1,4 @@
-This site is made for fun.Only peolple from IIITM Gwalior should try it.
+This site is made for fun ❤. Only Students from IIITM Gwalior 2017 batch should try it.
 
 How to run Hangman
 
