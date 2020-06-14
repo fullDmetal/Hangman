@@ -1,7 +1,7 @@
 .ig{
 	display: grid;
 	justify-content: center;
-margin: 0 1em 1em 1em;
+margin: 1em;
 padding: 0;
 }
 .Hangman-word {
