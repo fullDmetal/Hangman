@@ -1,6 +1,8 @@
 .ig{
 	display: grid;
 	justify-content: center;
+margin: 0 1em 1em 1em;
+padding: 0;
 }
 .Hangman-word {
 	letter-spacing: 1em;
@@ -8,23 +10,27 @@
 	font-size: 1.5rem;
 	color: #07ffc9;
 }
-
+img{
+	width:200px;
+	height:250px;
+}
+.keys{
+	margin: 0 15%;
+}
 .Hangman button {
 	border: none;
 	font-family: inherit;
-	font-size: 1.7rem;
 	cursor: pointer;
-	width: 10vh;
 	margin: 18px 8px 10px 13px;
 	background: #07ffc9;
-	border-radius: 10px;
-	padding-top: 5px;
+	border-radius: 5px;
+	padding:5px;
+	width: 30px;
 }
 
 .Hangman-reset {
-	color: #d6dfdf;
 	box-shadow: 0 6px #07ffc9 !important;
-	width: 10rem !important;
+	width: 5rem !important;
 	background-color: #07ffc9;
 	box-shadow: 0 0 40px #07ffc9;
 }
@@ -39,5 +45,14 @@
 	box-shadow: 0 0 30px #ff1100;
 }
 .tx{
-	margin: 1em 2em 1em 2em;
+	padding: 2em;
+}
+@media(max-width: 800px){
+	img{
+		width: 150px;
+		height: 200px;
+	}
+	.tx h2,.h2{
+		font-size: 20px;
+	}
 }

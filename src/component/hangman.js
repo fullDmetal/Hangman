@@ -1,13 +1,13 @@
 import React,{Component} from 'react';
 import {randomword} from './word';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import step0 from "./images/0.jpg";
-import step1 from "./images/1.jpg";
-import step2 from "./images/2.jpg";
-import step3 from "./images/3.jpg";
-import step4 from "./images/4.jpg";
-import step5 from "./images/5.jpg";
-import step6 from "./images/6.jpg";
+import step0 from "./images/0.png";
+import step1 from "./images/1.png";
+import step2 from "./images/2.png";
+import step3 from "./images/3.png";
+import step4 from "./images/4.png";
+import step5 from "./images/5.png";
+import step6 from "./images/6.png";
 
 class Hangman extends Component {
 	static defaultProps ={
@@ -38,7 +38,7 @@ class Hangman extends Component {
 	}
 
 	generateButtons() {
-		return "qwertyuiopasdfghjklzxcvbnm -".split("").map(letter => (
+		return "qwertyuiopasdfghjklzxcvbnm-".split("").map(letter => (
 				<button key={letter} value={letter} onClick={this.handleGuess} disabled={this.state.guessed.has(letter)} >
 				{letter}
 				</button>
@@ -66,7 +66,7 @@ class Hangman extends Component {
 		return (
 			<div className='Hangman bg-dark'>
 			<div className="text-right tx">
-				<h2 className='text-light text-center'>How much you know Amit</h2>
+				<h2 className='text-light text-center'>How well do you know Amit</h2>
 				<span className='text-primary h2'>Guessed wrong: {this.state.mistake}</span>
 			</div>
 				<div className='text-center ig'>
@@ -74,8 +74,9 @@ class Hangman extends Component {
 				</div>
 				<p className="text-center text-light">Guess someting related to amit..</p>
 				<div className="Hangman-word text-center">
-					{!gameover?this.guessedword():this.state.answer}</div>
-				<p className='text-center text-warning mt-4'>{gamestat}</p>
+					{!gameover?this.guessedword():this.state.answer}
+				</div>		
+				<p className='text-center text-warning keys'>{gamestat}</p>
 				<div >
 					<p className='text-center'>
 						<button className='Hangman-reset' onClick={this.resetButton}>Reset</button>
